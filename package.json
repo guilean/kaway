@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel -p 8080 src/docs/index.html",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "test": "jest"
   },
   "author": "Ivan Lopez & Pau Teruel",
   "license": "MIT",
@@ -24,6 +25,7 @@
     "@babel/preset-react": "^7.0.0-beta.42",
     "babel-core": "6",
     "babel-loader": "^8.0.0-beta",
+    "jest": "^25.2.6",
     "parcel-bundler": "^1.6.2",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
