@@ -1,0 +1,9 @@
+{
+  "name": "kawaui-components",
+  "version": "1.0.0",
+  "description": "React components for faster and easier web development.",
+  "main": "index.js",
+  "author": "Ivan Lopez & Pau Teruel",
+  "license": "MIT",
+  "private": false
+}
