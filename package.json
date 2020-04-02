@@ -3,7 +3,30 @@
   "version": "1.0.0",
   "description": "React components for faster and easier web development.",
   "main": "index.js",
+  "scripts": {
+    "start": "parcel -p 8080 src/docs/index.html",
+    "build": "webpack --mode=production"
+  },
   "author": "Ivan Lopez & Pau Teruel",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-react": "^7.0.0-beta.42",
+    "babel-core": "6",
+    "babel-loader": "^8.0.0-beta",
+    "parcel-bundler": "^1.6.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.6.0"
+  }
 }
