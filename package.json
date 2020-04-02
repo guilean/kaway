@@ -6,7 +6,8 @@
   "scripts": {
     "start": "parcel -p 8080 src/docs/index.html",
     "build": "webpack --mode=production",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "Ivan Lopez & Pau Teruel",
   "license": "MIT",
@@ -27,6 +28,7 @@
     "babel-loader": "^8.0.0-beta",
     "jest": "^25.2.6",
     "parcel-bundler": "^1.6.2",
+    "prop-types": "^15.7.2",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.6.0"
