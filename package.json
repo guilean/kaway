@@ -9,6 +9,11 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn test"
+    }
+  },
   "author": "Ivan Lopez & Pau Teruel",
   "license": "MIT",
   "private": false,
@@ -26,6 +31,7 @@
     "@babel/preset-react": "^7.0.0-beta.42",
     "babel-core": "6",
     "babel-loader": "^8.0.0-beta",
+    "husky": "^4.2.3",
     "jest": "^25.2.6",
     "parcel-bundler": "^1.6.2",
     "prop-types": "^15.7.2",
