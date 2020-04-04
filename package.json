@@ -1,6 +1,6 @@
 {
 	"name": "kawaui-components",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "React components for faster and easier web development.",
 	"main": "dist/index.js",
 	"scripts": {
