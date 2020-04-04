@@ -1,50 +1,52 @@
 {
-  "name": "kawaui-components",
-  "version": "1.0.0",
-  "description": "React components for faster and easier web development.",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel -p 8080 src/docs/index.html",
-    "build": "webpack --mode=production",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn test"
-    }
-  },
-  "author": "Ivan Lopez & Pau Teruel",
-  "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0-beta.42",
-    "@babel/preset-env": "^7.0.0-beta.42",
-    "@babel/preset-react": "^7.0.0-beta.42",
-    "@storybook/addon-a11y": "^5.3.18",
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-knobs": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
-    "@storybook/react": "^5.3.18",
-    "babel-core": "6",
-    "babel-loader": "^8.0.0-beta",
-    "husky": "^4.2.3",
-    "jest": "^25.2.6",
-    "parcel-bundler": "^1.6.2",
-    "prop-types": "^15.7.2",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-node-externals": "^1.6.0"
-  }
+	"name": "kawaui-components",
+	"version": "1.0.0",
+	"description": "React components for faster and easier web development.",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel -p 8080 src/docs/index.html",
+		"build": "webpack --mode=production",
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"husky": {
+		"hooks": {
+			"pre-push": "yarn test",
+			"pre-commit": "yarn prettier --check ./src ./stories"
+		}
+	},
+	"author": "Ivan Lopez & Pau Teruel",
+	"license": "MIT",
+	"private": false,
+	"dependencies": {
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	},
+	"peerDependencies": {
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.0.0-beta.42",
+		"@babel/preset-env": "^7.0.0-beta.42",
+		"@babel/preset-react": "^7.0.0-beta.42",
+		"@storybook/addon-a11y": "^5.3.18",
+		"@storybook/addon-actions": "^5.3.18",
+		"@storybook/addon-knobs": "^5.3.18",
+		"@storybook/addon-links": "^5.3.18",
+		"@storybook/addons": "^5.3.18",
+		"@storybook/react": "^5.3.18",
+		"babel-core": "6",
+		"babel-loader": "^8.0.0-beta",
+		"husky": "^4.2.3",
+		"jest": "^25.2.6",
+		"parcel-bundler": "^1.6.2",
+		"prettier": "^2.0.2",
+		"prop-types": "^15.7.2",
+		"webpack": "^4.42.1",
+		"webpack-cli": "^3.3.11",
+		"webpack-node-externals": "^1.6.0"
+	}
 }
