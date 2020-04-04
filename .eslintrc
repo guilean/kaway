@@ -10,5 +10,9 @@
 		"ecmaFeatures": {
 			"jsx": true
 		}
+	},
+	"env": {
+		"jest": true,
+		"browser": true
 	}
 }
