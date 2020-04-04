@@ -1,6 +1,6 @@
 {
-	"name": "kawaui-components",
-	"version": "1.0.4",
+	"name": "kawa-ui",
+	"version": "1.0.0",
 	"description": "React components for faster and easier web development.",
 	"main": "dist/index",
 	"scripts": {
