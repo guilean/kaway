@@ -6,7 +6,7 @@ const App = () => (
 	<div>
 		<h1>Demo</h1>
 		<h2>Button</h2>
-		<Button text="Click me!" />
+		<Button text="pepe me!" />
 	</div>
 );
 
