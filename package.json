@@ -40,6 +40,7 @@
 		"@storybook/react": "^5.3.18",
 		"babel-core": "6",
 		"babel-loader": "^8.0.0-beta",
+		"clsx": "^1.1.0",
 		"eslint": "^6.8.0",
 		"eslint-config-prettier": "^6.10.1",
 		"eslint-plugin-prettier": "^3.1.2",
