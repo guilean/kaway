@@ -1,8 +1,8 @@
 {
 	"name": "kawaui-components",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "React components for faster and easier web development.",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"scripts": {
 		"start": "parcel -p 8080 src/docs/index.html",
 		"build": "webpack --mode=production",
@@ -48,5 +48,8 @@
 		"webpack": "^4.42.1",
 		"webpack-cli": "^3.3.11",
 		"webpack-node-externals": "^1.6.0"
-	}
+	},
+	"files": [
+		"dist"
+	]
 }
