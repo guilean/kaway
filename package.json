@@ -1,5 +1,5 @@
 {
-	"name": "kawa-ui",
+	"name": "kaway",
 	"version": "1.0.0",
 	"description": "React components for faster and easier web development.",
 	"main": "dist/index",
