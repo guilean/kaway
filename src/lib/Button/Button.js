@@ -1,18 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import './Button.scss';
 
+import PropTypes from 'prop-types';
+import React from 'react';
+import clsx from 'clsx';
+
 const Button = ({
-	children,
-	disabled,
-	startIcon,
-	endIcon,
-	fullWidth,
-	href,
-	size,
+	children = null,
+	disabled = false,
+	startIcon = undefined,
+	endIcon = undefined,
+	fullWidth = false,
+	size = 'medium',
+	onClick = undefined,
 }) => {
 	return (
-		<button className="button" disabled={disabled}>
+		<button
+			className={clsx('btn', `btn--${size}`, {
+				['btn--fullWidth']: fullWidth,
+			})}
+			onClick={onClick}
+			disabled={disabled}
+		>
 			{startIcon && startIcon}
 			{children}
 			{endIcon && endIcon}
@@ -26,18 +34,8 @@ Button.propTypes = {
 	startIcon: PropTypes.node,
 	endIcon: PropTypes.node,
 	fullWidth: PropTypes.bool,
-	href: PropTypes.string,
 	size: PropTypes.string,
-};
-
-Button.defaultProps = {
-	children: null,
-	disabled: true,
-	startIcon: undefined,
-	endIcon: undefined,
-	fullWidth: false,
-	href: undefined,
-	size: 'medium',
+	onClick: PropTypes.func,
 };
 
 export default Button;
