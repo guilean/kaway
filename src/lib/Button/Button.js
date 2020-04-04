@@ -5,7 +5,7 @@ import React from 'react';
 import clsx from 'clsx';
 
 const Button = ({
-	children = null,
+	children,
 	disabled = false,
 	startIcon = undefined,
 	endIcon = undefined,

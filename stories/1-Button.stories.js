@@ -1,24 +1,28 @@
-import React from 'react';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 
-import { action } from '@storybook/addon-actions';
 import { Button } from '../src/lib/Button';
+import React from 'react';
+import { action } from '@storybook/addon-actions';
 import { withA11y } from '@storybook/addon-a11y';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
 export default {
-	title: 'Button',
+	title: 'KawayButton',
 	component: Button,
 	decorators: [withA11y, withKnobs],
 };
 
-export const ButtonText = () => (
+export const KawayButton = () => (
 	<Button
 		disabled={boolean('disabled', true)}
-		text={text('text', 'dummy')}
+		children={text('children', 'Kaway')}
+		startIcon={text('startIcon', 's')}
+		endIcon={text('endIcon', 'e')}
+		fullWidth={boolean('fullWidth', false)}
+		size={text('size', 'medium')}
 		onClick={action('clicked')}
 	/>
 );
 
-ButtonText.story = {
-	name: 'Button text',
+KawayButton.story = {
+	name: 'Button',
 };
