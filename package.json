@@ -8,7 +8,7 @@
 		"build": "webpack --mode=production",
 		"test": "jest -u",
 		"test:watch": "jest --watch",
-		"coveralls": "jest -u --coverage && cat ./coverage/lcov.info | coveralls",
+		"codecov": "jest -u --coverage",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook"
 	},
@@ -45,7 +45,7 @@
 		"babel-jest": "^25.2.6",
 		"babel-loader": "^8.0.0-beta",
 		"clsx": "^1.1.0",
-		"coveralls": "^3.0.11",
+		"codecov": "^3.6.5",
 		"eslint": "^6.8.0",
 		"eslint-config-prettier": "^6.10.1",
 		"eslint-plugin-prettier": "^3.1.2",

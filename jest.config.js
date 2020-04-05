@@ -11,5 +11,9 @@ module.exports = {
 		'^.+\\.jsx$': 'babel-jest',
 	},
 	setupFilesAfterEnv: ['./jest.setup.js'],
-	collectCoverageFrom: ['**/*.js', '!data/keyMap.js', '!/node_modules/'],
+	collectCoverageFrom: [
+		'src/lib/**/*.js',
+		'!data/keyMap.js',
+		'!/node_modules/',
+	],
 };

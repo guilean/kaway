@@ -1,7 +1,12 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+  codecov: codecov/codecov@1.0.2
 jobs:
+  build:
+    steps:
+      - codecov/upload:
+          file: ../coverage/coverage-final.json
   build-and-test:
     executor:
       name: node/default
@@ -10,7 +15,7 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn install
-            - run: yarn coveralls
+            - run: yarn codecov
 workflows:
   build-and-test:
     jobs:
