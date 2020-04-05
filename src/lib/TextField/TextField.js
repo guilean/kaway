@@ -39,6 +39,7 @@ const TextField = ({
 				</label>
 			)}
 			<input
+				aria-label={helperText}
 				className={clsx('textfield', {
 					['textfield--fullWidth']: fullWidth,
 				})}
