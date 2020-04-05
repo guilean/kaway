@@ -2,6 +2,7 @@ import './TextField.scss';
 
 import React, { useEffect, useRef } from 'react';
 
+import { Label } from '../Label';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
@@ -28,16 +29,7 @@ const TextField = ({
 
 	return (
 		<div className="textfield">
-			{label && (
-				<label
-					className={clsx('label', {
-						['label--error']: error,
-					})}
-					data-testid="label"
-				>
-					{label}
-				</label>
-			)}
+			{label && <Label error={error} text={label} />}
 			<input
 				aria-label={helperText}
 				className={clsx('input', {
@@ -55,7 +47,7 @@ const TextField = ({
 				placeholder={placeholder}
 				data-testid="textfield"
 			/>
-			{helperText && <label data-testid="label-helperText">{helperText}</label>}
+			{helperText && <Label text={helperText} />}
 		</div>
 	);
 };
