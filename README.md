@@ -6,7 +6,7 @@
 
 [![guilean](https://circleci.com/gh/guilean/kaway.svg?style=shield)](https://circleci.com/gh/guilean/kaway)
 
-[![Coverage Status](https://coveralls.io/repos/github/guilean/kaway/badge.svg?branch=master)](https://coveralls.io/github/guilean/kaway?branch=master)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/guilean/kaway/master.svg?style=flat-square)](https://codecov.io/gh/guilean/kaway/)
 
 <div align="center">
  
