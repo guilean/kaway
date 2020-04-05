@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label/> snapshot 1`] = `
+<label
+  class="label"
+  data-testid="label"
+/>
+`;
