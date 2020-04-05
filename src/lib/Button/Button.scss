@@ -1,13 +1,27 @@
 .btn {
-	color: red;
+	display: inline-block;
+	padding: 0.35em 1.2em;
+	border: 0.1em solid #ff8cf6;
+	box-sizing: border-box;
+	text-align: center;
+	height: 36px;
+	transition: all 0.2s;
+	color: #ff8cf6;
+	border-radius: 3px;
+	cursor: pointer;
+	font-weight: 600;
+	&:hover {
+		color: white;
+		background-color: #ff8cf6;
+	}
 	&--small {
-		width: 60px;
+		min-width: 60px;
 	}
 	&--medium {
-		width: 80px;
+		min-width: 80px;
 	}
 	&--large {
-		width: 120px;
+		min-width: 120px;
 	}
 	&--fullWidth {
 		width: 100%;
