@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "parcel -p 8080 src/docs/index.html",
 		"build": "webpack --mode=production",
-		"test": "jest",
+		"test": "jest -u",
 		"test:watch": "jest --watch",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook"
