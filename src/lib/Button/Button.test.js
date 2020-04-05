@@ -38,7 +38,7 @@ describe('<Button/>', () => {
 		expect(component).toHaveClass('btn--fullWidth');
 	});
 
-	it('should have disabled attribute when disabled prop', () => {
+	it('should be disabled when disabled prop', () => {
 		const { getByRole } = render(<Button children={'Dummy'} disabled />);
 		const component = getByRole('button');
 		expect(component.hasAttribute('disabled')).toBeTruthy();
