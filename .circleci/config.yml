@@ -6,7 +6,7 @@ jobs:
   build:
     steps:
       - codecov/upload:
-          file: ../coverage/coverage-final.json
+        file: coverage/coverage-final.json
   build-and-test:
     executor:
       name: node/default
