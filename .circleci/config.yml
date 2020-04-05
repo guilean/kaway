@@ -11,7 +11,7 @@ jobs:
       - node/with-cache:
           steps:
             - codecov/upload:
-              file: coverage/coverage-final.json
+                file: coverage/coverage-final.json
             - run: yarn install
             - run: yarn codecov
 workflows:
