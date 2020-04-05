@@ -94,8 +94,8 @@ describe('<TextField/>', () => {
 	});
 
 	it('should render helperText label when helperText prop', () => {
-		const { getByTestId } = render(<TextField helperText="Dummy" />);
-		const component = getByTestId('label-helperText');
+		const { getByText } = render(<TextField helperText="Dummy" />);
+		const component = getByText('Dummy');
 		expect(component.nodeName).toBe('LABEL');
 		expect(component.textContent).toBe('Dummy');
 	});
