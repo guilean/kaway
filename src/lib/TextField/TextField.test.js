@@ -59,7 +59,7 @@ describe('<TextField/>', () => {
 	it('should have modifier class when fullWidth prop', () => {
 		const { getByTestId } = render(<TextField fullWidth />);
 		const component = getByTestId('textfield');
-		expect(component).toHaveClass('textfield--fullWidth');
+		expect(component).toHaveClass('input--fullWidth');
 	});
 
 	it('should have value when value prop', () => {

@@ -27,7 +27,7 @@ const TextField = ({
 	}, []);
 
 	return (
-		<>
+		<div className="textfield">
 			{label && (
 				<label
 					className={clsx('label', {
@@ -40,8 +40,8 @@ const TextField = ({
 			)}
 			<input
 				aria-label={helperText}
-				className={clsx('textfield', {
-					['textfield--fullWidth']: fullWidth,
+				className={clsx('input', {
+					['input--fullWidth']: fullWidth,
 				})}
 				ref={inputRef}
 				onFocus={onFocus}
@@ -56,7 +56,7 @@ const TextField = ({
 				data-testid="textfield"
 			/>
 			{helperText && <label data-testid="label-helperText">{helperText}</label>}
-		</>
+		</div>
 	);
 };
 

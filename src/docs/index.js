@@ -1,4 +1,5 @@
-import { Button } from '../lib/Button';
+import { Button, TextField } from '../lib/';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -15,6 +16,11 @@ const App = () => (
 			Kaway Components
 		</h1>
 		<Button children="ADD NEW COMPONENT" />
+		<TextField
+			placeholder={'Add some value please'}
+			label="Phone number"
+			helperText="Please fill me in!"
+		/>
 	</main>
 );
 

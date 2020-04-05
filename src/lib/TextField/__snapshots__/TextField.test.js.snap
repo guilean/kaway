@@ -2,7 +2,7 @@
 
 exports[`<TextField/> snapshot 1`] = `
 <input
-  class="textfield"
+  class="input"
   data-testid="textfield"
   value=""
 />
