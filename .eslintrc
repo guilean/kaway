@@ -2,7 +2,8 @@
 	"extends": ["eslint:recommended", "plugin:react/recommended"],
 	"plugins": ["prettier"],
 	"rules": {
-		"prettier/prettier": "error"
+		"prettier/prettier": "error",
+		"react/no-children-prop": 0
 	},
 	"parserOptions": {
 		"ecmaVersion": 7,
